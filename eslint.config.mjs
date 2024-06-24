@@ -1,7 +1,8 @@
 import standard from "@eslint/js";
-
+import prettier from "eslint-config-prettier";
 export default [
   standard.configs.recommended,
+  prettier,
   {
     ignores: [
       'dist',
@@ -10,7 +11,7 @@ export default [
     ],
     rules: {
       curly: 'error',
-      'no-console': 'on', // Optional: only if you want to allow console.log statements
+      'no-console': 'warn', // Optional: only if you want to allow console.log statements
     }
   },
 ];
