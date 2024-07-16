@@ -1,0 +1,33 @@
+{
+    "name": "Node.js & Docker",
+    "dockerFile": "Dockerfile",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "editor.formatOnSave": true,
+      "prettier.requireConfig": true,
+      "eslint.format.enable": true,
+      "eslint.lintTask.enable": true,
+      "eslint.alwaysShowStatus": true
+    },
+    "extensions": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "ritwickdey.LiveServer"
+    ],
+    "postCreateCommand": "npm install && npm run build",
+    "remoteUser": "node",
+    "features": {
+      "docker-in-docker": {
+        "version": "latest"
+      }
+    },
+    "runArgs": [
+      "--init",
+      "--privileged",
+      "--volume=/var/run/docker.sock:/var/run/docker.sock"
+    ],
+    "containerEnv": {
+      "DOCKER_BUILDKIT": "1"
+    }
+  }
+  
