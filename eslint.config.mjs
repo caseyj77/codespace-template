@@ -1,5 +1,6 @@
 import standard from "@eslint/js";
 import prettier from "eslint-config-prettier";
+
 export default [
   standard.configs.recommended,
   prettier,

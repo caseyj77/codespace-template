@@ -1,16 +1,16 @@
 {
-  "devDependencies": {
-    "@eslint/js": "^9.5.0",
-    "eslint": "^9.5.0",
-    "eslint-config-prettier": "^9.1.0",
-    "globals": "^15.6.0",
-    "prettier": "3.3.2",
-    "webpack": "^5.92.1",
-    "webpack-cli": "^5.1.4"
-  },
   "name": "codespace-template",
   "version": "1.0.0",
   "private": true,
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write ."
+  },
   "dependencies": {
     "acorn": "^8.12.0",
     "acorn-jsx": "^5.3.2",
@@ -89,12 +89,14 @@
     "word-wrap": "^1.2.5",
     "yocto-queue": "^0.1.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "eslint": "^9.5.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.6.0",
+    "prettier": "3.3.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": []
 }
