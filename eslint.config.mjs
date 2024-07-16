@@ -10,8 +10,12 @@ export default [
       'node_modules'
     ],
     rules: {
-      curly: 'error',
-      'no-console': 'warn', // Optional: only if you want to allow console.log statements
-    }
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"], // Enforce single quotes
+      "indent": ["error", 2],
+      "linebreak-style": ["error", "unix"],
+      "no-unused-vars": ["warn"],
+      // Add more custom rules as needed
+    },
   },
 ];
